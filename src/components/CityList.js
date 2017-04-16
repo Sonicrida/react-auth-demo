@@ -26,6 +26,8 @@ class CityList extends Component {
 
     const { cities } = this.state;
 
+    return (
+
     <div>
         <Nav />
         <h3 className="text-center">City List</h3>
@@ -49,9 +51,13 @@ class CityList extends Component {
             <h2>Get Access to City List By Logging In</h2>
           </div>
         </div>
+      </div>
 
-        
+    );
+
 
   }
 
 }
+
+export default CityList;
