@@ -26,6 +26,8 @@ class CityList extends Component {
 
     const { cities } = this.state;
 
+    console.log(cities);
+
     return (
 
     <div>
