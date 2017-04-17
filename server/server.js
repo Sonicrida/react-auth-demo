@@ -17,7 +17,7 @@ const authCheck = jwt({
   audience: process.env.AUTH0_CLIENT_ID
 });
 
-app.get('/api/data', (req, res) => {
+app.get('/api/data', authCheck, (req, res) => {
   let demoData = [
     {
       id: 1,

@@ -1,10 +1,11 @@
 import axios from 'axios';
+import { getIdToken } from './AuthService';
 
-const BASE_URL = 'localhost:3333';
+const BASE_URL = 'http://localhost:3333';
 
 function getCityData() {
-  const url = 'http://localhost:3333/api/data';
-  return axios.get(url).then(response => response.data);
+  const url = `${BASE_URL}/api/data`;
+  return axios.get(url, { headers: { Authorization: `Bearer ${getIdToken()}` }}).then(response => response.data);
 }
 
 export {getCityData};

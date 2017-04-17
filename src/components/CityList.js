@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from './Nav';
+import { isLoggedIn } from '../utils/AuthService';
 import { getCityData } from '../utils/api';
 
 class CityList extends Component {
