@@ -13,7 +13,7 @@ const lock = new Auth0Lock(config.AUTH0_CLIENT_ID, config.AUTH0_DOMAIN, {
 
 lock.on('authenticated', authResult => {
   setIdToken(authResult.idToken);
-  //browserHistory.push('');
+  browserHistory.push('/');
 });
 
 export function login(options) {
