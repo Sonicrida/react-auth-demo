@@ -3,7 +3,6 @@ import { browserHistory } from 'react-router';
 import Auth0Lock from 'auth0-lock';
 const ID_TOKEN_KEY = 'id_token';
 import config from './config';
-console.log("id is " + config.AUTH0_CLIENT_ID + " and domain is " + config.AUTH0_DOMAIN);
 
 const lock = new Auth0Lock(config.AUTH0_CLIENT_ID, config.AUTH0_DOMAIN, {
   auth: {
